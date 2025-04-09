@@ -1,0 +1,156 @@
+.weather {
+    place-self: center;
+    margin-top: 150px;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg,  #A1C181, #FCCA46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+body.light {
+    background-color: #f0f5f1;
+    color: #000;
+}
+
+body.dark {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.weather.light-theme {
+    background-image: linear-gradient(45deg, #BEE7A5, #F5F3A2);
+    color: #000;
+}
+
+.weather.dark-theme {
+    background-image: linear-gradient(45deg, #588157, #A3B18A);
+    color: #fff;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 48px;
+    padding-left: 25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+}
+
+.search-bar img {
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer;
+}
+
+.weather-icon {
+    width: 150px;
+    margin: 30px 0;
+}
+.temperature {
+    color: #e0d5d5;
+    font-size: 80px;
+    line-height: 1;
+    margin: 0;
+}
+
+.location {
+    color: #e0d5d5;
+    font-size: 40px;
+    margin: 0;
+}
+
+.weather-data {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+}
+
+.weather-data .col span {
+    display: block;
+    font-size: 16px;
+}
+
+.weather-data .col img {
+    width: 26px;
+    margin-top: 10px;
+}
+
+.history {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.history h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.history li {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.history li:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+body.dark button {
+    background-color: #333;
+    color: #fff;
+}
